@@ -245,7 +245,9 @@ class Game:
             elif Game.Constants.FREE_ROAM_BTN.is_image_present():
                 with Game.Constants.FREE_ROAM_BTN:
                     console.log("Detected the end.")
+
                     victory_flag = self._victory_flag
+
                     if victory_flag:
                         self._wins += 1
                     else:
@@ -271,7 +273,7 @@ class Game:
                         else:
                             self._press_retry()
 
-                    time.sleep(2)
+                time.sleep(2)
 
     def _set_currency(self, value: int):
         self._currency.value = value
@@ -292,10 +294,13 @@ class Game:
                 console.log(f"Game #{self._games} has started.")
                 self._victory_flag = False
 
-                while Game.Constants.VOTE_START.is_image_present():
+                while (
+                    Game.Constants.VOTE_START.is_image_present()
+                    and not self._terminate_program.value
+                ):
                     with Game.Constants.VOTE_START:
                         self._press_start_game()
-                    time.sleep(5)
+                    time.sleep(2)
 
                 with Game.Constants.VOTE_START:
                     self._set_currency(

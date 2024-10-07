@@ -48,6 +48,7 @@ class Unit:
     PRIORITY_LAST = 2
     PRIORITY_STRONGEST = 3
     PRIORITY_WEAKEST = 4
+    CURSOR_OFFSET = 0.035
 
     def units():
         return Unit._units
@@ -135,7 +136,7 @@ class Unit:
     def select(self, x_offset: int | None = 0, y_offset: int | None = None):
         """Selects the unit."""
         if y_offset == None:
-            y_offset = -int(self._position.y * 0.035)
+            y_offset = -int(self._position.y * Unit.CURSOR_OFFSET)
 
         moveTo(self._position.x + x_offset + 1, self._position.y + y_offset + 1)
         time.sleep(DELAY)

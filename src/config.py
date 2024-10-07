@@ -10,6 +10,7 @@ class Config:
     STRONG_MODIFIER = "strong.png"
     THRICE_MODIFIER = "thrice.png"
     REGEN_MODIFIER = "regen.png"
+    VICTORY = "victory.png"
 
     def join_paths(*args) -> str:
         return os.path.join(Config.BASE_URL_PATH, *args)

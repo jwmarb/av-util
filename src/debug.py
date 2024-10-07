@@ -26,5 +26,5 @@ class console:
 
     def time(games, start_time):
         print(
-            f"{colored.fore_rgb(128, 128, 128)}{datetime.now().strftime(r'%m-%d %H:%M:%S')} | {colored.fore_rgb(255,0,255)}[STATS] {colored.fore_rgb(255,165,0)}Game AVG Time:{colored.Style.reset} {timedelta(seconds=time.time() - (start_time if start_time != None else time.time()))}"
+            f"{colored.fore_rgb(128, 128, 128)}{datetime.now().strftime(r'%m-%d %H:%M:%S')} | {colored.fore_rgb(255,0,255)}[STATS] {colored.fore_rgb(255,165,0)}Game AVG Time:{colored.Style.reset} {timedelta(seconds=(time.time() - (start_time if start_time != None else time.time()))/games)}"
         )
