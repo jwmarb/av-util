@@ -1,3 +1,6 @@
+import sys
+
+sys.path.append("../")
 from mouselib import moveTo
 import keyboard
 import pydirectinput
