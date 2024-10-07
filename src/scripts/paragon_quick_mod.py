@@ -20,6 +20,15 @@ GRAYSCALE = True
 STRONG = Config.join_paths(Config.STRONG_MODIFIER)
 THRICE = Config.join_paths(Config.THRICE_MODIFIER)
 REGEN = Config.join_paths(Config.REGEN_MODIFIER)
+REVITALIZE = Config.join_paths(Config.REVITALIZE_MODIFIER)
+
+thrice_counter = 0
+
+
+def get_revitalize():
+    return pyautogui.locateOnScreen(
+        REVITALIZE, confidence=CONFIDENCE, grayscale=GRAYSCALE, region=REGION.region
+    )
 
 
 def get_strong():
@@ -29,9 +38,14 @@ def get_strong():
 
 
 def get_thrice():
-    return pyautogui.locateOnScreen(
+    global thrice_counter
+    result = pyautogui.locateOnScreen(
         image=THRICE, confidence=CONFIDENCE, grayscale=GRAYSCALE, region=REGION.region
     )
+    if result:
+        thrice_counter += 1
+
+    return result
 
 
 def get_regen():
@@ -43,7 +57,10 @@ def get_regen():
 def quick_paragon_main(true_condition: Callable[[], bool]):
     pyautogui.useImageNotFoundException(False)
     while true_condition():
-        box = get_strong() or get_thrice() or get_regen()
+        if thrice_counter > 10:
+            box = get_strong() or get_regen() or get_revitalize() or get_thrice()
+        else:
+            box = get_strong() or get_thrice() or get_regen() or get_revitalize()
         if box != None:
             x, y = box.left, box.top
             pos = Position(x, y)
@@ -64,7 +81,11 @@ if __name__ == "__main__":
 
     while not should_exit:
         if Region.is_idle():
-            box = get_strong() or get_thrice() or get_regen()
+            if thrice_counter > 10:
+                box = get_strong() or get_regen() or get_revitalize() or get_thrice()
+            else:
+                box = get_strong() or get_thrice() or get_regen() or get_revitalize()
+
             if box != None:
                 x, y = box.left, box.top
                 pos = Position(x, y)

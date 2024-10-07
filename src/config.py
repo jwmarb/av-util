@@ -10,6 +10,7 @@ class Config:
     STRONG_MODIFIER = "strong.png"
     THRICE_MODIFIER = "thrice.png"
     REGEN_MODIFIER = "regen.png"
+    REVITALIZE_MODIFIER = "revitalize.png"
     VICTORY = "victory.png"
 
     def join_paths(*args) -> str:
