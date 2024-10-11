@@ -2,7 +2,7 @@
   AV Utilities
 </h1>
 <p align="center">
-  A collection of tools and scripts for the roblox game [Anime Vanguards](https://animevanguards.fandom.com/wiki/Anime_Vanguards_Wiki)
+  A collection of tools and scripts for the roblox game <a href="https://animevanguards.fandom.com/wiki/Anime_Vanguards_Wiki">Anime Vanguards</a>
 </p>
 
 <br>
