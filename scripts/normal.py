@@ -1,6 +1,9 @@
 import sys
 
 sys.path.append("../src")
+from config import Config
+
+Config.BASE_URL_PATH = "../src/assets"
 
 from game import Game
 from unit import Unit
