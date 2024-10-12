@@ -21,17 +21,18 @@ def main():
     vogita2 = Unit(path("statue_front1.json"), 6)
     vogita3 = Unit(path("statue_front2.json"), 6)
     vogita4 = Unit(path("statue_front3.json"), 6)
-    chain1 = Unit(path("statue_back0.json"), 1)
-    chain2 = Unit(path("statue_back1.json"), 1)
-    chain3 = Unit(path("statue_back2.json"), 1)
-    chain4 = Unit(path("statue_back3.json"), 1)
-    chain5 = Unit(path("main6.json"), 1)
+    naruto1 = Unit(path("statue_back0.json"), 1)
+    naruto2 = Unit(path("statue_back1.json"), 1)
+    naruto3 = Unit(path("statue_back2.json"), 1)
+    naruto4 = Unit(path("statue_back3.json"), 1)
     tengen1 = Unit(path("main0.json"), 3)
     tengen2 = Unit(path("main1.json"), 3)
     tengen3 = Unit(path("main2.json"), 3)
-    igris1 = Unit(path("main3.json"), 4)
-    igris2 = Unit(path("main4.json"), 4)
-    igris3 = Unit(path("main5.json"), 4)
+    chain1 = Unit(path("main3.json"), 4)
+    chain2 = Unit(path("main4.json"), 4)
+    chain3 = Unit(path("main5.json"), 4)
+    chain4 = Unit(path("main7.json"), 4)
+    chain5 = Unit(path("main6.json"), 4)
     sprintwagon1 = Unit(path("sprintwagon0.json"), 2)
     sprintwagon2 = Unit(path("sprintwagon1.json"), 2)
     sprintwagon3 = Unit(path("sprintwagon2.json"), 2)
@@ -69,29 +70,31 @@ def main():
         vogita3.place()
         vogita4.place().upgrade(2)
         move_back.play()
-        chain1.place().upgrade(2)
-        chain2.place().upgrade(2)
-        chain3.place().upgrade(2)
-        chain4.place().upgrade(2)
+        naruto1.place().upgrade(2)
+        naruto2.place().upgrade(2)
+        naruto3.place().upgrade(2)
+        naruto4.place().upgrade(2)
         reset_position.play(speed=3)
 
     def dps_upgrades():
         nonlocal rotate
         tengen2.upgrade(11)
-        igris1.upgrade(11)
+        chain1.upgrade(11)
 
         for _ in range(2):
             if rotate:
                 chain5.upgrade()
-                igris2.upgrade()
-                igris3.upgrade()
+                chain4.upgrade()
+                chain2.upgrade()
+                chain3.upgrade()
                 tengen1.upgrade()
                 tengen3.upgrade()
             else:
                 tengen3.upgrade()
                 tengen1.upgrade()
-                igris3.upgrade()
-                igris2.upgrade()
+                chain3.upgrade()
+                chain2.upgrade()
+                chain4.upgrade()
                 chain5.upgrade()
 
         rotate = not rotate
@@ -122,11 +125,17 @@ def main():
     )
 
     game.wave(6).on_begin(
-        lambda: (igris1.place(), igris2.place(), igris3.place(), chain5.place())
+        lambda: (
+            chain1.place(),
+            chain2.place(),
+            chain3.place(),
+            chain5.place(),
+            chain4.place(),
+        )
     ).on_end(upgrade_farms)
 
     game.wave(7).on_begin(
-        lambda: (igris1.upgrade(), igris2.upgrade(), igris3.upgrade())
+        lambda: (chain1.upgrade(), chain2.upgrade(), chain3.upgrade(), chain4.upgrade())
     ).on_end(upgrade_farms)
 
     game.wave(8).on_begin(lambda: tengen3.upgrade(2)).on_end(upgrade_farms)
