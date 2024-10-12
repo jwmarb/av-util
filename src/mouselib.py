@@ -82,12 +82,7 @@ def click(x: int, y: int):
 
 def reset_cursor(delay: float | None = None):
     moveTo(CURSOR_RESET_POS.x - 1, CURSOR_RESET_POS.y - 1)
-    moveTo(CURSOR_RESET_POS.x, CURSOR_RESET_POS.y)
-    pydirectinput.click()
-    pydirectinput.click()
-    moveTo(CURSOR_RESET_POS.x - 1, CURSOR_RESET_POS.y - 1)
-    moveTo(CURSOR_RESET_POS.x, CURSOR_RESET_POS.y)
-    pydirectinput.click()
+    pydirectinput.click(CURSOR_RESET_POS.x, CURSOR_RESET_POS.y)
     if delay:
         time.sleep(delay)
 
