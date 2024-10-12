@@ -1,4 +1,5 @@
 import os
+import threading
 from typing import Callable
 import keyboard
 import pyautogui
@@ -54,14 +55,24 @@ def get_regen():
     )
 
 
-def quick_paragon_main(true_condition: Callable[[], bool]):
+def quick_paragon_main(true_condition: Callable[[], bool], is_paragon_busy):
     pyautogui.useImageNotFoundException(False)
+
+    def debounce():
+        is_paragon_busy.value = False
+
+    debouncer: threading.Timer | None = None
     while true_condition():
         if thrice_counter > 10:
             box = get_strong() or get_regen() or get_revitalize() or get_thrice()
         else:
             box = get_strong() or get_thrice() or get_regen() or get_revitalize()
         if box != None:
+            if debouncer != None:
+                debouncer.cancel()
+            debouncer = threading.Timer(3.0, debounce)
+            debouncer.start()
+            is_paragon_busy.value = True
             x, y = box.left, box.top
             pos = Position(x, y)
             click(pos.x, pos.y)
