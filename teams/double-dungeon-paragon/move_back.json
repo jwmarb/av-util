@@ -1,0 +1,7 @@
+{
+  "mouse": [],
+  "keyboard": [
+    { "name": "s", "time": 1728708052.1543038, "event_type": "down" },
+    { "name": "s", "time": 1728708056.5, "event_type": "up" }
+  ]
+}
