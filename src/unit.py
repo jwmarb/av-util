@@ -1,4 +1,5 @@
 import json
+import threading
 import time
 from typing import Self
 
@@ -32,9 +33,7 @@ def with_validation(fn):
     def wrapper(self, *args, **kwargs):
         if self.is_valid():
             focus_roblox()
-            time.sleep(DELAY)
             fn(self, *args, **kwargs)
-            time.sleep(DELAY)
             reset_cursor(DELAY)
         return self
 
@@ -52,6 +51,10 @@ class Unit:
 
     def units():
         return Unit._units
+
+    def reset_units():
+        for unit in Unit._units:
+            unit.reset()
 
     def __init__(
         self,
@@ -95,6 +98,13 @@ class Unit:
 
         return self
 
+    def delay(self, delay=DELAY):
+        """
+        Intentionally adds a delay
+        """
+        reset_cursor(delay)
+        return self
+
     def reset(self):
         """
         Resets the unit's state to its initial state
@@ -125,11 +135,11 @@ class Unit:
 
         keyboard.press_and_release(str(self._inventory_idx))
 
+        time.sleep(DELAY)
+
         self.select(0, 0)
 
         keyboard.press_and_release("q")  # release if unit placement still selected
-
-        reset_cursor(DELAY)
 
         return self
 
@@ -139,11 +149,8 @@ class Unit:
             y_offset = -int(self._position.y * Unit.CURSOR_OFFSET)
 
         moveTo(self._position.x + x_offset + 1, self._position.y + y_offset + 1)
-        time.sleep(DELAY)
         y = (self._position.y + y_offset) if y_offset != None else self._position.y
-        moveTo(self._position.x + x_offset, y)
-        time.sleep(DELAY)
-        pydirectinput.click()
+        pydirectinput.click(self._position.x + x_offset, y)
         return self
 
     @with_validation
