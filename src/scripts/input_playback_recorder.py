@@ -1,6 +1,4 @@
 import sys
-
-
 import time
 import pydirectinput
 import keyboard
@@ -11,6 +9,12 @@ import sys
 
 sys.path.insert(0, "../")
 
+from macro import Macro
+from events.key_event import KeyEvent
+from events.wheel_event import WheelEvent
+from events.button_event import ButtonEvent
+from events.move_event import MoveEvent
+from util import get_screen_dimensions
 from mouselib import moveTo
 
 mouse_events: list[mouse.MoveEvent | mouse.WheelEvent | mouse.ButtonEvent] = []
@@ -60,6 +64,36 @@ def keyboard_playback():
         time.sleep(dt)
 
 
+def save_events():
+    mouse_events_json = []
+    keyboard_events_json = [
+        KeyEvent(name=x.name, event_type=x.event_type, time=x.time).model_dump()
+        for x in kb_events
+    ]
+    width, height = get_screen_dimensions()
+    for i, x in enumerate(mouse_events):
+        if isinstance(x, mouse.MoveEvent):
+            mouse_events_json.append(
+                MoveEvent(
+                    x=x.x, y=x.y, time=x.time, screen_width=width, screen_height=height
+                ).model_dump()
+            )
+
+        elif isinstance(x, mouse.ButtonEvent):
+            mouse_events_json.append(
+                ButtonEvent(
+                    event_type=x.event_type, button=x.button, time=x.time
+                ).model_dump()
+            )
+        elif isinstance(x, mouse.WheelEvent):
+            mouse_events_json.append(
+                WheelEvent(event_type=int(x.delta), time=x.time).model_dump()
+            )
+
+    with open("playback.json", "w+") as f:
+        json.dump({"mouse": mouse_events_json, "keyboard": keyboard_events_json}, f)
+
+
 if __name__ == "__main__":
     keyboard.wait("[")
     print("Recording...")
@@ -74,17 +108,6 @@ if __name__ == "__main__":
     mouse.unhook(mouse_events.append)
     keyboard.unhook(kb_events.append)
 
-    print("Stoped and playing back")
+    print("Saved to playback.json")
 
-    t1 = threading.Thread(target=lambda: keyboard_playback())
-    t2 = threading.Thread(target=lambda: mouse_playback())
-
-    t1.start()
-    t2.start()
-
-    t1.join()
-    s = time.perf_counter()
-    t2.join()
-    e = time.perf_counter() - s
-
-    print(f"off by {e} seconds")
+    save_events()
