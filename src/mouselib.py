@@ -5,6 +5,7 @@ import pydirectinput
 
 from typings import Position
 from util import get_screen_dimensions
+from win32con import *
 
 PUL = ctypes.POINTER(ctypes.c_ulong)
 
@@ -89,3 +90,18 @@ def reset_cursor(delay: float | None = None):
     pydirectinput.click()
     if delay:
         time.sleep(delay)
+
+
+def scroll(direction: int):
+    extra = ctypes.c_ulong(0)
+    ii_ = Input_I()
+    ii_.mi = MouseInput(
+        0,
+        0,
+        ctypes.c_ulong(direction * 120),
+        MOUSEEVENTF_WHEEL,
+        0,
+        ctypes.pointer(extra),
+    )
+    x = Input(ctypes.c_ulong(0), ii_)
+    ctypes.windll.user32.SendInput(1, ctypes.pointer(x), ctypes.sizeof(x))
