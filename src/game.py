@@ -9,6 +9,7 @@ import ctypes
 
 from config import Config
 from debug import console
+from macro import Macro
 from mouselib import click, reset_cursor
 from scripts.paragon_quick_mod import quick_paragon_main
 from typings.position import Position
@@ -16,7 +17,7 @@ from typings.position import Position
 from PIL import ImageGrab
 
 from typings.region import Region
-from unit import Unit
+from unit import DELAY, Unit
 
 from collections import deque
 
@@ -60,7 +61,7 @@ class Game:
         )
 
         REWARD_GEM_ICON = Region(
-            Config.join_paths(Config.REWARD_GEM_ICON), 1089, 643, 831, 401, 1920, 1080
+            Config.join_paths(Config.REWARD_GEM_ICON), 930, 55, 992, 98, 1920, 1080
         )
 
     class Wave:
@@ -110,7 +111,7 @@ class Game:
 
     def __init__(
         self,
-        units: Iterable[Unit] = [],
+        units: Iterable[Unit] = Unit.units(),
         track_currency=False,
         currency_update_frequency=1.0,
         ocr_model: VISION_MODEL = "microsoft/trocr-base-printed",
@@ -136,7 +137,7 @@ class Game:
         global __is_orm_enabled__
 
         self._gamemode: MODE = gamemode
-        self._units = units if units != None else Unit.units()
+        self._units = units
         self._waves: dict[int, Game.Wave] = {}
         self._wave = 1
         self._currency = Value(ctypes.c_uint64, 0)
@@ -160,6 +161,9 @@ class Game:
         self._wins = 0
         self._losses = 0
         self._start_time = None
+        self._pre_game_setup: Callable[[], None] | None = None
+        self._pre_game_setup_key: str = "space"
+        self._is_paragon_busy = Value(ctypes.c_bool, False)
 
     def get_money(self):
         return self._money
@@ -180,6 +184,31 @@ class Game:
            callback: The function to be invoked.
         """
         self._waves[0] = Game.Wave(0).on_begin(callback)
+
+    def pre_setup(self, callback: Callable[[], None], key: str = "space"):
+        """
+        Invoked only once the program has started. This is ideal for setting up the user's position and camera angle before the game actually starts.
+        This operation is blocking, meaning that the program does NOT actually start until the completion of the pre-setup. The pre-setup can be initiated
+        with a key press of your choice (default "space").
+
+        Args:
+            callback: The function to be invoked.
+             key: The key that will initiate the setup process. Default is space.
+        """
+        self._pre_game_setup = callback
+        self._pre_game_setup_key = key
+
+    def _exec_presetup(self):
+        if self._pre_game_setup:
+            console.log(
+                f'A pre-setup was detected. The actual program will NOT start until you initiate it. Press "{self._pre_game_setup_key}" to initate it.'
+            )
+            while not self._terminate_program.value and not keyboard.is_pressed(
+                self._pre_game_setup_key
+            ):
+                continue
+            if not self._terminate_program.value:
+                self._pre_game_setup()
 
     def _enqueue_action(self, action: Callable[[], None] | None):
         """
@@ -260,8 +289,7 @@ class Game:
 
                     # Reset the queue
                     Game._action_queue.clear()
-                    for unit in self._units:
-                        unit.reset()
+                    Unit.reset_units()
                     self._allow_ocr_invocation.value = False
                     self._wave_has_currency_listener.value = False
                     self._currency.value = 0
@@ -270,6 +298,7 @@ class Game:
 
                         if victory_flag and self._gamemode == "paragon":
                             self._press_next()
+                            self._is_paragon_busy.value = True
                         else:
                             self._press_retry()
 
@@ -278,9 +307,9 @@ class Game:
     def _set_currency(self, value: int):
         self._currency.value = value
 
-    def _paragon_listener(_terminate_program, _gamemode):
+    def _paragon_listener(_terminate_program, _gamemode, _is_paragon_busy):
         if _gamemode == "paragon":
-            quick_paragon_main(lambda: (not _terminate_program.value))
+            quick_paragon_main(lambda: (not _terminate_program.value), _is_paragon_busy)
 
     def _game_start_listener(self):
         """
@@ -288,7 +317,10 @@ class Game:
         """
 
         while not self._terminate_program.value:
-            if Game.Constants.VOTE_START.is_image_present():
+            if (
+                Game.Constants.VOTE_START.is_image_present()
+                and not self._is_paragon_busy.value
+            ):
                 if self._start_time == None:
                     self._start_time = time.time()
                 console.log(f"Game #{self._games} has started.")
@@ -333,8 +365,16 @@ class Game:
         """
         A function that runs on a separate process that terminates the entire program on a spacebar press.
         """
-        keyboard.wait(key, suppress=True)
-        _terminate_program.value = True
+
+        def on_press(_):
+            _terminate_program.value = True
+            console.log("Termination signal sent. Waiting...")
+
+        cleanup = keyboard.on_release_key(key, callback=on_press, suppress=True)
+        while not _terminate_program.value:
+            continue
+
+        cleanup()
 
     def _ocr_process(
         _terminate_program,
@@ -423,6 +463,7 @@ class Game:
         while not self._terminate_program.value:
             if len(self._action_queue) > 0:
                 self._action_queue.pop()()
+                reset_cursor(DELAY)
 
     def _currency_listener(self):
         prev = 0
@@ -460,21 +501,23 @@ class Game:
         )
         c3 = Process(
             target=Game._paragon_listener,
-            args=(self._terminate_program, self._gamemode),
+            args=(self._terminate_program, self._gamemode, self._is_paragon_busy),
         )
+        c1.start()
+        c3.start()
+        self._exec_presetup()
+        c2.start()
         t1.start()
         t2.start()
         t3.start()
         t4.start()
         t5.start()
-        c1.start()
-        c2.start()
-        c3.start()
         console.log("Successfully started the program!")
         while not self._terminate_program.value:
             continue
         console.log("The program will now terminate.")
         Region.terminate()
+        Macro.terminate()
         c1.kill()
         c2.kill()
         c3.kill()
