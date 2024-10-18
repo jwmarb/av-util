@@ -1,6 +1,7 @@
 import ctypes
 from functools import cache
 import time
+from typing import Literal
 import pydirectinput
 
 from typings import Position
@@ -87,7 +88,12 @@ def reset_cursor(delay: float | None = None):
         time.sleep(delay)
 
 
-def scroll(direction: int):
+def scroll(direction: int | Literal["down", "up"]):
+    if direction == "up":
+        direction = 1
+    elif direction == "down":
+        direction = -1
+
     extra = ctypes.c_ulong(0)
     ii_ = Input_I()
     ii_.mi = MouseInput(
