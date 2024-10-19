@@ -133,7 +133,8 @@ if __name__ == "__main__":
     game.wave(43).on_begin(upgrade_all)
     game.wave(44).on_begin(upgrade_all)
     game.wave(45).on_begin(upgrade_all)
-    game.wave(46).on_begin(upgrade_all).on_end(
+    game.wave(46).on_begin(upgrade_all)
+    game.wave(47).on_end(
         lambda: [unit.sell() for unit in (igris + vogita + tengen + jinwoo + sasuke)]
     )
 
