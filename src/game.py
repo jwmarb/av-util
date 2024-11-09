@@ -63,6 +63,9 @@ class Game:
         REWARD_GEM_ICON = Region(
             Config.join_paths(Config.REWARD_GEM_ICON), 930, 55, 992, 98, 1920, 1080
         )
+        REWARD_TROPHY = Region(
+            Config.join_paths(Config.REWARD_TROPHY_ICON), 934, 61, 989, 99, 1920, 1080
+        )
 
     class Wave:
         def __init__(self, wave: int) -> None:
@@ -260,7 +263,10 @@ class Game:
         A function that runs in a separate thread that handles game over logic. This does not mean that the user lost, but when the game ends.
         """
         while not self._terminate_program.value:
-            if Game.Constants.REWARD_GEM_ICON.is_image_present():
+            if (
+                Game.Constants.REWARD_GEM_ICON.is_image_present()
+                or Game.Constants.REWARD_TROPHY.is_image_present()
+            ):
                 with Game.Constants.FREE_ROAM_BTN:
                     self._victory_flag = True
                     counter = 0
