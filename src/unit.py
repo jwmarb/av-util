@@ -73,6 +73,8 @@ class Unit:
                 else f'The unit "{name}" has no assigned placement. Any action invoked for this unit will not be executed.'
             )
         self._events: list[MoveEvent | ButtonEvent] = []
+        self.Y_OFFSET = None
+        self.X_OFFSET = 0
         self._process_json(json_data_path)
         self._position: Position = self._init_position()
         self._is_invalid = False
@@ -137,20 +139,35 @@ class Unit:
 
         time.sleep(DELAY)
 
-        self.select(0, 0)
+        y_offset = self.Y_OFFSET
+        x_offset = self.X_OFFSET
+
+        self.X_OFFSET = 0
+        self.Y_OFFSET = 0
+
+        self.select()
+
+        self.X_OFFSET = x_offset
+        self.Y_OFFSET = y_offset
 
         keyboard.press_and_release("q")  # release if unit placement still selected
 
         return self
 
-    def select(self, x_offset: int | None = 0, y_offset: int | None = None):
+    def select(self):
         """Selects the unit."""
-        if y_offset == None:
-            y_offset = -int(self._position.y * Unit.CURSOR_OFFSET)
+        if self.Y_OFFSET == None:
+            self.Y_OFFSET = -int(self._position.y * Unit.CURSOR_OFFSET)
 
-        moveTo(self._position.x + x_offset + 1, self._position.y + y_offset + 1)
-        y = (self._position.y + y_offset) if y_offset != None else self._position.y
-        pydirectinput.click(self._position.x + x_offset, y)
+        moveTo(
+            self._position.x + self.X_OFFSET + 1, self._position.y + self.Y_OFFSET + 1
+        )
+        y = (
+            (self._position.y + self.Y_OFFSET)
+            if self.Y_OFFSET != None
+            else self._position.y
+        )
+        pydirectinput.click(self._position.x + self.X_OFFSET, y)
         return self
 
     @with_validation
