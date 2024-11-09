@@ -1,0 +1,1691 @@
+[
+  {
+    "x": 713,
+    "y": 556,
+    "time": 1731176774.6722145,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "event_type": "up",
+    "button": "x2",
+    "time": 1731176774.7799907
+  },
+  {
+    "x": 712,
+    "y": 556,
+    "time": 1731176774.805636,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 712,
+    "y": 555,
+    "time": 1731176774.8131442,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 711,
+    "y": 555,
+    "time": 1731176774.8141432,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 710,
+    "y": 555,
+    "time": 1731176774.8201427,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 709,
+    "y": 555,
+    "time": 1731176774.8254597,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 708,
+    "y": 555,
+    "time": 1731176774.8294594,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 708,
+    "y": 554,
+    "time": 1731176774.8319685,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 707,
+    "y": 554,
+    "time": 1731176774.8339741,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 706,
+    "y": 554,
+    "time": 1731176774.8379745,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 705,
+    "y": 554,
+    "time": 1731176774.8414786,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 704,
+    "y": 554,
+    "time": 1731176774.8444817,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 703,
+    "y": 553,
+    "time": 1731176774.8484836,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 702,
+    "y": 553,
+    "time": 1731176774.8509867,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 701,
+    "y": 553,
+    "time": 1731176774.8539903,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 700,
+    "y": 553,
+    "time": 1731176774.8569908,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 699,
+    "y": 553,
+    "time": 1731176774.8600214,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 698,
+    "y": 553,
+    "time": 1731176774.8625286,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 697,
+    "y": 553,
+    "time": 1731176774.8655322,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 696,
+    "y": 553,
+    "time": 1731176774.8675323,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 695,
+    "y": 553,
+    "time": 1731176774.871035,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 694,
+    "y": 553,
+    "time": 1731176774.874044,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 694,
+    "y": 552,
+    "time": 1731176774.8750427,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 693,
+    "y": 552,
+    "time": 1731176774.876044,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 692,
+    "y": 552,
+    "time": 1731176774.8780434,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 691,
+    "y": 552,
+    "time": 1731176774.8800437,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 690,
+    "y": 552,
+    "time": 1731176774.8815465,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 689,
+    "y": 552,
+    "time": 1731176774.8835542,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 688,
+    "y": 552,
+    "time": 1731176774.8845553,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 687,
+    "y": 552,
+    "time": 1731176774.8865547,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 686,
+    "y": 552,
+    "time": 1731176774.8875537,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 686,
+    "y": 551,
+    "time": 1731176774.8885543,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 685,
+    "y": 551,
+    "time": 1731176774.889554,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 684,
+    "y": 551,
+    "time": 1731176774.8920627,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 683,
+    "y": 551,
+    "time": 1731176774.8930662,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 682,
+    "y": 551,
+    "time": 1731176774.8950672,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 681,
+    "y": 550,
+    "time": 1731176774.8960676,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 680,
+    "y": 550,
+    "time": 1731176774.8980663,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 679,
+    "y": 550,
+    "time": 1731176774.899153,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 678,
+    "y": 550,
+    "time": 1731176774.9011536,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 677,
+    "y": 550,
+    "time": 1731176774.9016566,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 676,
+    "y": 549,
+    "time": 1731176774.9036617,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 675,
+    "y": 549,
+    "time": 1731176774.9046605,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 674,
+    "y": 549,
+    "time": 1731176774.9066603,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 673,
+    "y": 549,
+    "time": 1731176774.9076607,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 673,
+    "y": 548,
+    "time": 1731176774.9086607,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 672,
+    "y": 548,
+    "time": 1731176774.9096606,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 671,
+    "y": 548,
+    "time": 1731176774.911165,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 670,
+    "y": 548,
+    "time": 1731176774.9121695,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 669,
+    "y": 548,
+    "time": 1731176774.914169,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 668,
+    "y": 547,
+    "time": 1731176774.9151692,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 667,
+    "y": 547,
+    "time": 1731176774.9171793,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 666,
+    "y": 547,
+    "time": 1731176774.9181707,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 665,
+    "y": 546,
+    "time": 1731176774.920169,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 664,
+    "y": 546,
+    "time": 1731176774.9211702,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 663,
+    "y": 546,
+    "time": 1731176774.921674,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 662,
+    "y": 546,
+    "time": 1731176774.9236815,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 661,
+    "y": 546,
+    "time": 1731176774.9246821,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 660,
+    "y": 545,
+    "time": 1731176774.9266825,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 659,
+    "y": 545,
+    "time": 1731176774.9276822,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 658,
+    "y": 545,
+    "time": 1731176774.9296823,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 657,
+    "y": 544,
+    "time": 1731176774.9311855,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 656,
+    "y": 544,
+    "time": 1731176774.9321897,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 655,
+    "y": 544,
+    "time": 1731176774.9341896,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 654,
+    "y": 544,
+    "time": 1731176774.9351897,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 654,
+    "y": 543,
+    "time": 1731176774.9361894,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 653,
+    "y": 543,
+    "time": 1731176774.937191,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 652,
+    "y": 543,
+    "time": 1731176774.9391904,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 651,
+    "y": 543,
+    "time": 1731176774.9401896,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 650,
+    "y": 542,
+    "time": 1731176774.9416945,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 649,
+    "y": 542,
+    "time": 1731176774.9426985,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 648,
+    "y": 542,
+    "time": 1731176774.9447021,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 647,
+    "y": 541,
+    "time": 1731176774.946703,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 646,
+    "y": 541,
+    "time": 1731176774.948702,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 645,
+    "y": 541,
+    "time": 1731176774.9512079,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 644,
+    "y": 541,
+    "time": 1731176774.9532132,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 644,
+    "y": 540,
+    "time": 1731176774.9542131,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 643,
+    "y": 540,
+    "time": 1731176774.9557211,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 642,
+    "y": 540,
+    "time": 1731176774.9577208,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 641,
+    "y": 540,
+    "time": 1731176774.9597204,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 641,
+    "y": 539,
+    "time": 1731176774.961224,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 640,
+    "y": 539,
+    "time": 1731176774.963234,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 639,
+    "y": 539,
+    "time": 1731176774.966232,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 638,
+    "y": 539,
+    "time": 1731176774.9702318,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 638,
+    "y": 538,
+    "time": 1731176774.9712322,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 637,
+    "y": 538,
+    "time": 1731176774.9732773,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 636,
+    "y": 538,
+    "time": 1731176774.9772763,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 635,
+    "y": 538,
+    "time": 1731176774.9807806,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 635,
+    "y": 537,
+    "time": 1731176774.982786,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 634,
+    "y": 537,
+    "time": 1731176774.9847903,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 633,
+    "y": 537,
+    "time": 1731176774.98979,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 632,
+    "y": 536,
+    "time": 1731176774.994859,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 631,
+    "y": 536,
+    "time": 1731176775.0017226,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 630,
+    "y": 536,
+    "time": 1731176775.0132334,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 630,
+    "y": 535,
+    "time": 1731176775.0660286,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 629,
+    "y": 535,
+    "time": 1731176775.0731351,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 628,
+    "y": 535,
+    "time": 1731176775.085075,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 628,
+    "y": 534,
+    "time": 1731176775.0931222,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 627,
+    "y": 534,
+    "time": 1731176775.098628,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 626,
+    "y": 534,
+    "time": 1731176775.1153243,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 625,
+    "y": 534,
+    "time": 1731176775.1319191,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 625,
+    "y": 533,
+    "time": 1731176775.1339226,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 624,
+    "y": 533,
+    "time": 1731176775.1414263,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 624,
+    "y": 532,
+    "time": 1731176775.1519423,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 623,
+    "y": 532,
+    "time": 1731176775.152942,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 622,
+    "y": 532,
+    "time": 1731176775.159745,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 621,
+    "y": 532,
+    "time": 1731176775.1692529,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 620,
+    "y": 532,
+    "time": 1731176775.181048,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 620,
+    "y": 531,
+    "time": 1731176775.1820521,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 619,
+    "y": 531,
+    "time": 1731176775.1915603,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 618,
+    "y": 531,
+    "time": 1731176775.2031145,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 617,
+    "y": 531,
+    "time": 1731176775.2196252,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 617,
+    "y": 530,
+    "time": 1731176775.2311468,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 616,
+    "y": 530,
+    "time": 1731176775.2371526,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 615,
+    "y": 530,
+    "time": 1731176775.251513,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 614,
+    "y": 530,
+    "time": 1731176775.269306,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 614,
+    "y": 529,
+    "time": 1731176775.2813175,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 613,
+    "y": 529,
+    "time": 1731176775.2958343,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 612,
+    "y": 529,
+    "time": 1731176775.3328953,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 611,
+    "y": 529,
+    "time": 1731176775.353913,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 611,
+    "y": 528,
+    "time": 1731176775.3559144,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 610,
+    "y": 528,
+    "time": 1731176775.3800373,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 609,
+    "y": 528,
+    "time": 1731176775.503077,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 609,
+    "y": 527,
+    "time": 1731176775.520131,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 608,
+    "y": 527,
+    "time": 1731176775.583294,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 607,
+    "y": 527,
+    "time": 1731176775.6168668,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 607,
+    "y": 526,
+    "time": 1731176775.6232362,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 606,
+    "y": 526,
+    "time": 1731176775.6472538,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 605,
+    "y": 526,
+    "time": 1731176775.7056034,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "event_type": "down",
+    "button": "left",
+    "time": 1731176776.3537824
+  },
+  {
+    "event_type": "up",
+    "button": "left",
+    "time": 1731176776.4622595
+  },
+  {
+    "x": 716,
+    "y": 524,
+    "time": 1731176778.712224,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 716,
+    "y": 525,
+    "time": 1731176778.748824,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 715,
+    "y": 525,
+    "time": 1731176778.758455,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "event_type": "up",
+    "button": "x2",
+    "time": 1731176778.8139765
+  },
+  {
+    "x": 714,
+    "y": 525,
+    "time": 1731176778.8533762,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 713,
+    "y": 525,
+    "time": 1731176778.8753204,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 712,
+    "y": 525,
+    "time": 1731176778.8868277,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 711,
+    "y": 525,
+    "time": 1731176778.8939154,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 710,
+    "y": 525,
+    "time": 1731176778.9009168,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 709,
+    "y": 525,
+    "time": 1731176778.908096,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 708,
+    "y": 525,
+    "time": 1731176778.915609,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 707,
+    "y": 525,
+    "time": 1731176778.9311182,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 706,
+    "y": 525,
+    "time": 1731176779.0018709,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 705,
+    "y": 525,
+    "time": 1731176779.0093799,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 704,
+    "y": 525,
+    "time": 1731176779.0153956,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 703,
+    "y": 525,
+    "time": 1731176779.0219038,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 702,
+    "y": 525,
+    "time": 1731176779.0269043,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 701,
+    "y": 525,
+    "time": 1731176779.0314088,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 700,
+    "y": 525,
+    "time": 1731176779.0354133,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 699,
+    "y": 525,
+    "time": 1731176779.0384142,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 698,
+    "y": 525,
+    "time": 1731176779.043921,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 697,
+    "y": 525,
+    "time": 1731176779.0469198,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 697,
+    "y": 524,
+    "time": 1731176779.0481987,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 696,
+    "y": 524,
+    "time": 1731176779.0501986,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 695,
+    "y": 524,
+    "time": 1731176779.053596,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 694,
+    "y": 524,
+    "time": 1731176779.0570996,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 693,
+    "y": 524,
+    "time": 1731176779.0611029,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 692,
+    "y": 524,
+    "time": 1731176779.0651429,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 692,
+    "y": 523,
+    "time": 1731176779.0661423,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 691,
+    "y": 523,
+    "time": 1731176779.0681438,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 690,
+    "y": 523,
+    "time": 1731176779.071646,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 689,
+    "y": 523,
+    "time": 1731176779.0746515,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 688,
+    "y": 523,
+    "time": 1731176779.07865,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 687,
+    "y": 522,
+    "time": 1731176779.0831556,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 686,
+    "y": 522,
+    "time": 1731176779.0881555,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 685,
+    "y": 522,
+    "time": 1731176779.0926657,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 684,
+    "y": 521,
+    "time": 1731176779.0966651,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 683,
+    "y": 521,
+    "time": 1731176779.102173,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 682,
+    "y": 521,
+    "time": 1731176779.1056817,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 681,
+    "y": 521,
+    "time": 1731176779.109682,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 681,
+    "y": 520,
+    "time": 1731176779.1111867,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 680,
+    "y": 520,
+    "time": 1731176779.1141958,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 679,
+    "y": 520,
+    "time": 1731176779.1181958,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 678,
+    "y": 519,
+    "time": 1731176779.1211972,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 677,
+    "y": 519,
+    "time": 1731176779.1242619,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 676,
+    "y": 519,
+    "time": 1731176779.1282616,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 676,
+    "y": 518,
+    "time": 1731176779.130263,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 675,
+    "y": 518,
+    "time": 1731176779.133302,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 674,
+    "y": 518,
+    "time": 1731176779.138303,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 674,
+    "y": 517,
+    "time": 1731176779.1438112,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 673,
+    "y": 517,
+    "time": 1731176779.1458104,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 672,
+    "y": 517,
+    "time": 1731176779.158166,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 672,
+    "y": 516,
+    "time": 1731176779.1675797,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 671,
+    "y": 516,
+    "time": 1731176779.1710832,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 670,
+    "y": 516,
+    "time": 1731176779.1829174,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 670,
+    "y": 515,
+    "time": 1731176779.183918,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 669,
+    "y": 515,
+    "time": 1731176779.1919336,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 669,
+    "y": 514,
+    "time": 1731176779.1961093,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 668,
+    "y": 514,
+    "time": 1731176779.1981978,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 667,
+    "y": 513,
+    "time": 1731176779.2049673,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 666,
+    "y": 513,
+    "time": 1731176779.2127717,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 666,
+    "y": 512,
+    "time": 1731176779.2169268,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 665,
+    "y": 512,
+    "time": 1731176779.2190115,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 664,
+    "y": 512,
+    "time": 1731176779.2268403,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 664,
+    "y": 511,
+    "time": 1731176779.2309995,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 663,
+    "y": 511,
+    "time": 1731176779.2320302,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 662,
+    "y": 511,
+    "time": 1731176779.238286,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 661,
+    "y": 510,
+    "time": 1731176779.2438073,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 660,
+    "y": 510,
+    "time": 1731176779.2508156,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 659,
+    "y": 510,
+    "time": 1731176779.2608752,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 659,
+    "y": 509,
+    "time": 1731176779.2640302,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 658,
+    "y": 509,
+    "time": 1731176779.2959697,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 657,
+    "y": 509,
+    "time": 1731176779.322997,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 657,
+    "y": 508,
+    "time": 1731176779.3259974,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 656,
+    "y": 508,
+    "time": 1731176779.3421175,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 655,
+    "y": 508,
+    "time": 1731176779.356623,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 655,
+    "y": 507,
+    "time": 1731176779.3654633,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 654,
+    "y": 507,
+    "time": 1731176779.3719716,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 653,
+    "y": 507,
+    "time": 1731176779.3870604,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 652,
+    "y": 507,
+    "time": 1731176779.3995678,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 652,
+    "y": 506,
+    "time": 1731176779.402075,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 651,
+    "y": 506,
+    "time": 1731176779.4120915,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 650,
+    "y": 506,
+    "time": 1731176779.4231675,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 649,
+    "y": 506,
+    "time": 1731176779.434223,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 649,
+    "y": 505,
+    "time": 1731176779.4352226,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 648,
+    "y": 505,
+    "time": 1731176779.4444346,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 647,
+    "y": 505,
+    "time": 1731176779.4579399,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 646,
+    "y": 505,
+    "time": 1731176779.4739568,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 646,
+    "y": 504,
+    "time": 1731176779.481978,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 645,
+    "y": 504,
+    "time": 1731176779.4894888,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 644,
+    "y": 504,
+    "time": 1731176779.5041974,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 643,
+    "y": 504,
+    "time": 1731176779.5227935,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 642,
+    "y": 504,
+    "time": 1731176779.5449996,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 642,
+    "y": 503,
+    "time": 1731176779.5555105,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 641,
+    "y": 503,
+    "time": 1731176779.5640152,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 640,
+    "y": 503,
+    "time": 1731176779.5792031,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 639,
+    "y": 503,
+    "time": 1731176779.5933788,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 638,
+    "y": 503,
+    "time": 1731176779.616901,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 638,
+    "y": 502,
+    "time": 1731176779.620899,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 637,
+    "y": 502,
+    "time": 1731176779.6531723,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 636,
+    "y": 502,
+    "time": 1731176779.6891148,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 635,
+    "y": 502,
+    "time": 1731176779.7340846,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 635,
+    "y": 501,
+    "time": 1731176779.7482,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 634,
+    "y": 501,
+    "time": 1731176779.8607862,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 633,
+    "y": 501,
+    "time": 1731176780.041117,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 633,
+    "y": 500,
+    "time": 1731176780.07927,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 632,
+    "y": 500,
+    "time": 1731176780.0857754,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 631,
+    "y": 500,
+    "time": 1731176780.524422,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "x": 631,
+    "y": 499,
+    "time": 1731176780.5818741,
+    "screen_width": 1920,
+    "screen_height": 1080
+  },
+  {
+    "event_type": "down",
+    "button": "left",
+    "time": 1731176780.788744
+  },
+  {
+    "event_type": "up",
+    "button": "left",
+    "time": 1731176780.9043448
+  }
+]
